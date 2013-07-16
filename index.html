@@ -47,7 +47,27 @@
           font-size: 18px;
           line-height: 24px;
       }
-      body {
+
+      /* Video pitch and Action */
+      .pitch {
+          padding: 2.5% 0%;
+      }
+      .order {
+          padding: 2% 0%;
+      }
+      .actions {
+          background-color: #343434;
+          padding: 3% 0%;
+      }
+      .video, .thermometer, .order, .social, .statistics {
+          text-align: center;
+      }
+      .statistics h3, .statistics p {
+          color: white;
+      }
+
+      /* OLD */
+      /*body {
           padding-top: 20px;
           padding-bottom: 40px;
       }
@@ -64,6 +84,7 @@
           border: 1px dotted;
           text-align: center;
       }
+      */
       .video {
           /* Internal borders have 1px width, thus need to add 4 x 1px to 120px. */
           height: 124px;
@@ -116,20 +137,24 @@
                 <p class="lead">This is my first bitstarter project.</p>
             </div>
         </div>
-        <div class="row pitch">
-            <div class="span6 video">
-                Video
+        <div class="row-fluid pitch">
+            <div class="span5 offset1 video">
+                <img class="img-polariod" src="http://placehold.it/480x300">
             </div>
-            <div class="span6">
-                <div class="thermometer">
-                    Thermometer
-                </div>
-                <div class="order">
-                    Order
-                </div>
-                <div class="social">
-                    Social
-                </div>
+
+            <!-- 'actions' div contain statistics... -->
+            <div class="span5 actions">
+                <div class="span8 offset2">
+                    <div class="statistics">
+                        <div class="span4">
+                        </div>
+                    </div>
+                    <div class="order">
+                        Order
+                    </div>
+                    <div class="social">
+                        Social
+                    </div>
             </div>
         </div>
         <div class="row section1">
