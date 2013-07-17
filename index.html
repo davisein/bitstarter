@@ -81,39 +81,13 @@
           color: #cccccc;
           text-align: center;
       }
-      /* OLD */
-      /*body {
-          padding-top: 20px;
-          padding-bottom: 40px;
+      .footer p {
+          font-size: 11px;
       }
-      .container {
-          width: 960px;
+      .footer a {
+          color: #ccccff;
       }
-      p.lead {
-          padding-top: 15px;
-      }
-      .navigation, .pitch, .section1, .section2, .faq, .footer {
-          padding: 10px 0px 10px 0px;
-      }
-      .video, .thermometer, .order, .social {
-          border: 1px dotted;
-          text-align: center;
-      }
-      */
-      .video {
-          /* Internal borders have 1px width, thus need to add 4 x 1px to 120px. */
-          height: 124px;
-          line-height: 124px;
-      }
-      .thermometer, .order, .social {
-          /* line-height to vertically center: http://phrogz.net/css/vertical-align/index.html */
-          height: 40px;
-          line-height: 40px;
-      }
-      div.row {
-          border: 1px solid;
-      }
-    </style>
+  </style>
   </head>
   <body>
 
@@ -234,6 +208,41 @@
         </div>
         <div class="span5 asset">
             <img class="img-polaroid" src="http://placehold.it/480x300">
+        </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="row-fluid faq">
+        <div class="span10 offset1">
+            <h3>FAQ</h3>
+            <div class="accordion" id="accordion2">
+                <div class="accordion-group">
+                    <div class="accordion-heading">
+                        <a class="accordion-toggle" data-toggle="collapse"
+                            data-parent="#accordion2" href="#collapseOne">
+                            What does FAQ stand for?
+                        </a>
+                    </div>
+                    <div id="collapseOne" class="accordion-body collapse">
+                        <div class="accordion-inner">
+                            Frequently Asked Question.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-group">
+                    <div class="accordion-heading">
+                        <a class="accordion-toggle" data-toggle="collapse"
+                            data-parent="#accordion2" href="#collapseTwo">
+                            What's a Frequently Asked Question?
+                        </a>
+                    </div>
+                    <div id="collapseTwo" class="accordion-body collapse">
+                        <div class="accordion-inner">
+                            A question which is commonly asked by users
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
   </body>
